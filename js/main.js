@@ -1,26 +1,6 @@
-// // Définition de l'objet Person via un constructeur
-//
-// function Person(nick, age, sex, parent, work, friends) {
-//     this.nick = nick;
-//     this.age = age;
-//     this.sex = sex;
-//     this.parent = parent;
-//     this.work = work;
-//     this.friends = friends;
-//
-// }
-//
-//
-// // On crée des variables qui vont contenir une instance de l'objet Person :
-//
-// var seb = new Person('Sébastien', 23, 'm', 'aîné', 'JavaScripteur', []);
-//
-// var lau = new Person('Laurence', 1p9, 'f', 'soeur', 'Sous-officier', []);
-//
-//
-// alert(seb.nick); // Affiche : « Sébastien »
-//
-// alert(lau.nick); // Affiche : « Laurence »
+// exercice 1
+var nico = new Person('nico','Ponthieux',1984,'francaise','cb',[]);
+
 
 function Person(nick, nom, naissance, origine, paiement){
   this.nick = nick;
@@ -28,8 +8,20 @@ function Person(nick, nom, naissance, origine, paiement){
   this.naissance = naissance;
   this.origine = origine;
   this.paiement = paiement;
+  this.date=2017;
 }
 
-var nico = new Person('nico','Ponthieux',1984,'francaise','cb',[]);
 
 alert(nico.nick+' '+nico.nom);
+
+
+alert(nico.date-nico.naissance+" ans ");
+
+
+
+
+    // la liste tout en majuscules des pays autorisés pour notre utilisateur
+    //
+    // la liste tout en majuscules des moyens de paiment autorisés sur le site
+    //
+    // l'âge minimum pour entrer sur le site
