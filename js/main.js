@@ -1,6 +1,4 @@
 // exercice 1
-var amel = new Person('amelie','Pioger',1980,'france','visa','date','year',[]);
-// var year=(amel.date-amel.age);
 
 function Person(prenom, nom, age, pays, paiement,date,){
   this.prenom = prenom;
@@ -11,13 +9,14 @@ function Person(prenom, nom, age, pays, paiement,date,){
   this.date=2017;
   this.year=(this.date-this.age);
 };
+var amel = new Person('amelie','Pioger',1980,'france','visa','date','year',[]);
 alert(amel.prenom+' '+amel.nom+ ' '+amel.year+''+'ans')
 
 // alert(amel.year)
 // alert(amel.date-amel.age+" ans ")
 
 /*Comparaison*/
-var comp=new Comparaison(['FRANCE','BELGIQUE','ALLEMAGNE',],18,'MASTERCARD');
+
 function Comparaison(pays,year,paiement){
 this.pays=pays,
 this.year=year,
@@ -26,7 +25,7 @@ this.compare=function(){
 
 };
 };
-
+var comp=new Comparaison(['FRANCE','BELGIQUE','ALLEMAGNE',],18,'MASTERCARD')
 // /*Age*/
 //
 if (comp.year<amel.year){
@@ -49,9 +48,7 @@ if(cpt){
 
   alert('pays refuse');
 };
-
 /*Paiement*/
-
 var cptp=0
 for (let j = 0; j < comp.paiement.length; j++) {
   if (amel.paiement===comp.paiement[j]) {
